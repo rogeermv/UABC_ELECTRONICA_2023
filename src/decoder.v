@@ -19,7 +19,7 @@ module seg7 (
     always @(*) begin
         case(counter)
             //                7654321
-            0:  segments = 7'b0111111;
+            0:  segments = 7'b0000001;
             1:  segments = 7'b0000110;
             2:  segments = 7'b1011011;
             3:  segments = 7'b1001111;
