@@ -28,6 +28,12 @@ module seg7 (
             7: segments = 7'b1111001; //E
             8: segments = 7'b0111001; //C
             9: segments = 7'b0110001; //T
+            10: segments = 7'b1010000; //R
+            11: segments = 7'b0111111; //O
+            12: segments = 7'b1010100; //N
+            13: segments = 7'b0110000; //I
+            14: segments = 7'b0111001; //C
+            15: segments = 7'b1110111; //A
             default:    
                 segments = 7'b0000000;
         endcase
