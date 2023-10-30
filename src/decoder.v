@@ -18,17 +18,16 @@ module seg7 (
 
     always @(*) begin
         case(counter)
-            //                7654321
-            0:  segments = 7'b0000001;
-            1:  segments = 7'b0000110;
-            2:  segments = 7'b1011011;
-            3:  segments = 7'b1001111;
-            4:  segments = 7'b1100110;
-            5:  segments = 7'b1101101;
-            6:  segments = 7'b1111100;
-            7:  segments = 7'b0000111;
-            8:  segments = 7'b1111111;
-            9:  segments = 7'b1100111;
+            0: segments = 7'b0111110; //U
+            1: segments = 7'b1110111; //A
+            2: segments = 7'b1111100; //B
+            3: segments = 7'b0111001; //C
+            4: segments = 7'b1000000; //-
+            5: segments = 7'b1111001; //E
+            6: segments = 7'b0111000; //L 
+            7: segments = 7'b1111001; //E
+            8: segments = 7'b0111001; //C
+            9: segments = 7'b0110001; //T
             default:    
                 segments = 7'b0000000;
         endcase
