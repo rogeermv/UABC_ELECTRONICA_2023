@@ -14,7 +14,7 @@ async def test_7seg(dut):
     # reset
     dut._log.info("reset")
     dut.rst_n.value = 0
-    await ClockCycles(dut.clk, 10)
+    await ClockCycles(dut.clk, 1)
     dut.rst_n.value = 1
 
     dut._log.info("check all segments")
