@@ -41,7 +41,7 @@ module tt_um_uabc_electronica_2023 #( parameter MAX_COUNT = 24'd10_000_000 ) (
                 digit <= digit + 1'b1;
 
                 // only count from 0 to 15
-                if (digit == 15)
+                if (digit == 16)
                     digit <= 0;
 
             end else
