@@ -18,9 +18,9 @@ async def test_7seg(dut):
     dut.rst_n.value = 1
 
     dut._log.info("check all segments")
-    # check all segments and roll over
     for i in range(16):
         dut._log.info("check segment {}".format(i))
         await ClockCycles(dut.clk, 1000)
-        
+
+        # all bidirectionals are set to output
         assert dut.uio_oe == 0xFF
